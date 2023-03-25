@@ -1,3 +1,5 @@
+package Vetor;
+
 import java.util.Scanner;
 
 /*Criar um vetor A com 10 elementos inteiros. Desenvolver um programa

@@ -2,7 +2,7 @@
 mesmo tipo e tamanho, sendo que cada elemento do vetor B deverá
 ser o resto da divisão do respectivo elemento de A por 2 (dois), ou
 seja: B[i] := A[i] % 2.*/
-
+package Vetor;
 
 import java.util.Scanner;
 
