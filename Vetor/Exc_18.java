@@ -16,10 +16,27 @@ public class Exc_18 {
             System.out.println("Informe a idade da pessoa " + i);
             vetor[i] = le.nextInt();
         }
-        int menorIdade = 0;
-        for (int i = 0; i < vetor.length; i++) {
-            
+        int menorIdade = vetor[0];
+        int idxMenor = 0;
+        int maiorIdade = vetor[0];
+        int idxMaior = 0;
+        for (int i = 1; i < vetor.length; i++) {
+            if (vetor[i] > maiorIdade) {
+                maiorIdade = vetor[i];
+                idxMaior = i;
+            } else if (vetor[i] < menorIdade) {
+                menorIdade = vetor[i];
+                idxMenor = i;
+            }
         }
+        System.out.println("VETOR DE IDADE ");
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println(vetor[i] + " ");
+        }
+        System.out.println("Menor idade: " + menorIdade);
+        System.out.println("Indice de menor Idade " + idxMenor);
+        System.out.println("Maior Idade " + maiorIdade);
+        System.out.println("Indice de Maior Idade: " + idxMaior);
     }
 
 }
