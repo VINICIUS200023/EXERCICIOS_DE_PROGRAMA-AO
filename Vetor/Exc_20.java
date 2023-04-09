@@ -13,11 +13,16 @@ public class Exc_20 {
         Scanner le = new Scanner(System.in);
 
         double[] vetorA = new double[20];
-        double dolar = 5.08;
+        double dolar;
+        System.out.println("INFORME O VALOR DO DOLAR ");
+        dolar = le.nextDouble();
 
         for (int i = 0; i < vetorA.length; i++) {
-            System.out.println("INFORME O VALOR DO VETOR " + (i + 1));
-            vetorA[i] = le.nextDouble();
+            vetorA[i] = dolar * (i + 1);
+        }
+        System.out.println("VETOR DE IDADE ");
+        for (int i = 0; i < vetorA.length; i++) {
+            System.out.println(vetorA[i] + " ");
         }
     }
 }
