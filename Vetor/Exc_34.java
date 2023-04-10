@@ -1,12 +1,11 @@
-/*Criar um vetor A com 10 elementos inteiros. Escreva um programa que 
-imprima cada elemento do vetor A e a relação de todos os pares de 0 
-até o respectivo elemento */
-
+/* 5.Criar um vetor A com 10 elementos inteiros. Escreva um programa que 
+imprima cada elemento do vetor A e a relação de todos os divisores do 
+respectivo elemento.*/
 package Vetor;
 
 import java.util.Scanner;
 
-public class Exc_33 {
+public class Exc_34 {
 
     public static void main(String[] args) {
 
@@ -22,17 +21,17 @@ public class Exc_33 {
 
         for (int i = 0; i < vetorA.length; i++) {
 
-            for (int j = 2; j < vetorA[i]; j++) {
+            System.out.println(" divisor  " + vetorA[i]);
 
-                System.out.println(vetorA[i] + " é par");
-                if (j % 2 == 0) {
+            for (int j = 1; j < vetorA[i]; j++) {
 
-                    System.out.println(j);
+                if (vetorA[i] % j == 0) {
+
+                    System.out.println(j + "  divisor");
 
                 }
             }
             System.out.println();
         }
-
     }
 }
